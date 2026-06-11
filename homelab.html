@@ -1,9 +1,11 @@
 <head>
     <title>Cauy Gibson | Homelab</title>
     <meta name="apple-mobile-web-app-title" content="Cauy Gibson">
-    <meta name="description" content="Computer Engineering graduate with experience in Linux administration, virtualization, networking, homelab infrastructure, hardware troubleshooting, and self-hosted services.">
+    <meta name="description"
+        content="Computer Engineering graduate with experience in Linux administration, virtualization, networking, homelab infrastructure, hardware troubleshooting, and self-hosted services.">
     <meta name="author" content="Cauy Gibson">
-    <meta name="keywords" content="Cauy Gibson, Linux, Proxmox, TrueNAS, Homelab, Networking, System Administration, IT Support, Virtualization, Jellyfin">
+    <meta name="keywords"
+        content="Cauy Gibson, Linux, Proxmox, TrueNAS, Homelab, Networking, System Administration, IT Support, Virtualization, Jellyfin">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96" />
@@ -16,154 +18,164 @@
 
 <body>
 
-<div id="header"></div>
+    <div id="header"></div>
 
-<div id="navbar"></div>
+    <div id="navbar"></div>
 
-<main>
+    <main>
 
-    <div class="container">
+        <div class="container">
 
-        <h2>Homelab Infrastructure</h2>
+            <h2>Homelab Infrastructure</h2>
 
-        <details class="expand-card">
+            <details class="expand-card">
 
-            <summary>Proxmox Virtualization Host</summary>
+                <summary>Proxmox Virtualization Host</summary>
 
-            <div class="expand-content">
+                <div class="expand-content">
 
-                <ul>
-                    <li>Ryzen 7 5700X</li>
-                    <li>32GB DDR4 3200MHz</li>
-                    <li>Intel Arc A370</li>
-                    <li>2x 2TB HDD</li>
-                    <li>1x 1TB HDD</li>
-                    <li>1x 500GB SSD</li>
-                </ul>
+                    <ul>
+                        <li>Ryzen 7 5700X</li>
+                        <li>32GB DDR4 3200MHz</li>
+                        <li>Intel Arc A370</li>
+                        <li>2x 2TB HDD</li>
+                        <li>1x 1TB HDD</li>
+                        <li>1x 500GB SSD</li>
+                    </ul>
 
-                <p>
-                Primary virtualization platform running multiple Linux VMs
-                and services. Used for self-hosting, storage, media services,
-                game servers, and development projects.
-                </p>
+                    <p>
+                        Primary virtualization platform running multiple Linux VMs
+                        and services. Used for self-hosting, storage, media services,
+                        game servers, and development projects.
+                    </p>
 
-                <div class="project-gallery" data-project="proxmox">
-                    <img src="images/proxmox1.jpg">
-                    <img src="images/proxmox2.png">
+                    <div class="gallery-wrapper">
+                        <div class="project-gallery" data-project="proxmox">
+                            <img src="images/proxmox1.jpg">
+                            <img src="images/proxmox2.png">
+                        </div>
+                    </div>
+
                 </div>
 
-            </div>
+            </details>
 
-        </details>
+            <br>
 
-        <br>
+            <details class="expand-card">
 
-        <details class="expand-card">
+                <summary>TrueNAS Scale Storage Server</summary>
 
-            <summary>TrueNAS Scale Storage Server</summary>
+                <div class="expand-content">
 
-            <div class="expand-content">
+                    <h3>Storage</h3>
 
-                <h3>Storage</h3>
+                    <ul>
+                        <li>POOL-A: 1TB Stripe</li>
+                        <li>POOL-B: 2x 2TB Stripe</li>
+                        <li>ACL Based Permissions</li>
+                        <li>SMB File Sharing</li>
+                    </ul>
 
-                <ul>
-                    <li>POOL-A: 1TB Stripe</li>
-                    <li>POOL-B: 2x 2TB Stripe</li>
-                    <li>ACL Based Permissions</li>
-                    <li>SMB File Sharing</li>
-                </ul>
+                    <h3>Applications</h3>
 
-                <h3>Applications</h3>
+                    <ul>
+                        <li>Jellyfin</li>
+                        <li>Kavita</li>
+                        <li>Stash</li>
+                        <li>Mylar3</li>
+                        <li>Sonarr</li>
+                        <li>Radarr</li>
+                        <li>Prowlarr</li>
+                        <li>qBittorrent</li>
+                        <li>Tdarr</li>
+                        <li>Gluetun VPN</li>
+                    </ul>
 
-                <ul>
-                    <li>Jellyfin</li>
-                    <li>Kavita</li>
-                    <li>Stash</li>
-                    <li>Mylar3</li>
-                    <li>Sonarr</li>
-                    <li>Radarr</li>
-                    <li>Prowlarr</li>
-                    <li>qBittorrent</li>
-                    <li>Tdarr</li>
-                    <li>Gluetun VPN</li>
-                </ul>
+                    <div class="gallery-wrapper">
+                        <div class="project-gallery" data-project="truenas">
+                            <img src="images/truenas1.png">
+                            <img src="images/truenas2.png">
+                        </div>
+                    </div>
 
-                <div class="project-gallery" data-project="truenas">
-                    <img src="images/truenas1.png">
-                    <img src="images/truenas2.png">
                 </div>
 
-            </div>
+            </details>
 
-        </details>
+            <br>
 
-        <br>
+            <details class="expand-card">
 
-        <details class="expand-card">
+                <summary>Networking & Remote Access</summary>
 
-            <summary>Networking & Remote Access</summary>
+                <div class="expand-content">
 
-            <div class="expand-content">
+                    <ul>
+                        <li>TP-Link Deco Mesh Network</li>
+                        <li>Static IP Management</li>
+                        <li>Port Forwarding</li>
+                        <li>DDNS Configuration</li>
+                        <li>Nginx Proxy Manager</li>
+                        <li>Let's Encrypt SSL Certificates</li>
+                        <li>HTTPS Reverse Proxy</li>
+                    </ul>
 
-                <ul>
-                    <li>TP-Link Deco Mesh Network</li>
-                    <li>Static IP Management</li>
-                    <li>Port Forwarding</li>
-                    <li>DDNS Configuration</li>
-                    <li>Nginx Proxy Manager</li>
-                    <li>Let's Encrypt SSL Certificates</li>
-                    <li>HTTPS Reverse Proxy</li>
-                </ul>
+                    <p>
+                        Public services exposed through HTTPS using
+                        Nginx Proxy Manager and Let's Encrypt certificates.
+                    </p>
 
-                <p>
-                Public services exposed through HTTPS using
-                Nginx Proxy Manager and Let's Encrypt certificates.
-                </p>
+                    <div class="gallery-wrapper">
+                        <div class="project-gallery" data-project="network">
+                            <img src="images/networkdiagram.png">
+                            <img src="images/virtualizationdiagram.png">
+                            <img src="images/serviceflowdiagram.png">
+                            <img src="images/nginxproxy.png">
+                        </div>
+                    </div>
 
-                <div class="project-gallery" data-project="network">
-                    <img src="images/networkdiagram.png">
-                    <img src="images/virtualizationdiagram.png">
-                    <img src="images/serviceflowdiagram.png">
-                    <img src="images/nginxproxy.png">
                 </div>
 
-            </div>
+            </details>
 
-        </details>
+            <br>
 
-        <br>
+            <details class="expand-card">
 
-        <details class="expand-card">
+                <summary>Game Servers</summary>
 
-            <summary>Game Servers</summary>
+                <div class="expand-content">
 
-            <div class="expand-content">
+                    <ul>
+                        <li>Minecraft</li>
+                        <li>Palworld</li>
+                        <li>Factorio</li>
+                    </ul>
 
-                <ul>
-                    <li>Minecraft</li>
-                    <li>Palworld</li>
-                    <li>Factorio</li>
-                </ul>
+                    <p>
+                        Ubuntu Server based game hosting using SSH administration,
+                        systemd services, automated startup scripts,
+                        log monitoring and Discord integration.
+                    </p>
 
-                <p>
-                Ubuntu Server based game hosting using SSH administration,
-                systemd services, automated startup scripts,
-                log monitoring and Discord integration.
-                </p>
+                    <div class="gallery-wrapper">
+                        <div class="project-gallery" data-project="games">
+                        </div>
+                    </div>
 
-                <div class="project-gallery" data-project="games">
                 </div>
 
-            </div>
+            </details>
 
-        </details>
+        </div>
 
-    </div>
-    
-</main>
+    </main>
 
-<div id="footer"></div>
+    <div id="lightbox-container"></div>
 
-<script src="script.js"></script>
+    <div id="footer"></div>
+
+    <script src="script.js"></script>
 
 </body>
